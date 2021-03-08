@@ -1,4 +1,4 @@
-# Simplefolio
+# My Portfolio
 
 ## [Live site here!](https://bethiachan.netlify.app/)
 
