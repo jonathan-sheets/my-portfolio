@@ -7,11 +7,11 @@
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
     <!-- Put here your site title -->
-    <title>Bethia Chan</title>
+    <title>Jonathan Sheets</title>
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="bethiamchan, Bethia Chan, HTML, CSS, JavaScript, UX, UX Design, UI, UI Design" />
+    <meta name="keywords" content="jonathan-sheets, Jonathan Sheets, HTML, CSS, JavaScript, JSX, TypeScript" />
     <!-- Improve your SEO by adding a small description of you -->
-    <meta name="description" content="Bethia Chan | Developer" />
+    <meta name="description" content="Jonathan Sheets | Developer" />
 
     <!-- Required libraries -->
     <link
@@ -25,28 +25,37 @@
 
   </head>
 
-  <body>
+  <body style="background-color: #CFCFCF">  <!-- to fill in the gaps of white left under red to black gradient section-->
     <div id="top"></div>
 
     <!-- **** Hero Section **** -->
     <div id="hero" class="jumbotron">
+      <a href="#about">
+        <img 
+          src="assets/logo-192x192.png" 
+          class="img-fluid" 
+          style="position: absolute; top: 15px; right: 25px; width: 70px" 
+          alt="Jonathan Sheets logo"
+        >
+      </a>
       <div class="container">
-        <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Bethia Chan.</span>
+        <h1 class="hero-title load-hidden">
+          Hi, my name is <span class="text-color-main">Jonathan Sheets.</span>
           <br />
           <span class="hero-subtitle">
-            I bring solutions to life.
+            I am a Full-Stack Developer in Colorado.
           </span>
         </h1>
-        <p class="hero-cta" class="load-hidden">
+        <p class="hero-cta load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">
             Learn More
-            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-            <!-- <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-            <i class="fa fa-hand-o-down" aria-hidden="true"></i> -->
+            <!-- <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> -->
+            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+            <!-- <i class="fa fa-arrow-down" aria-hidden="true"></i> -->
+            <!-- <i class="fa fa-hand-o-down" aria-hidden="true"></i> -->
           </a>
         </p>
+         
      </div>
     </div>
     <!-- /END Hero Section -->
@@ -62,9 +71,8 @@
             <div class="about-wrapper__image">
               <img
                 class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="./assets/BChan.png"
+                width="330"
+                src="./assets/jsheets.png"
                 alt="Profile Image"
               />
             </div>
@@ -72,21 +80,26 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                I am a developer with a background in operations and marketing. I enjoy solving problems. My favorite aspect of development and design is bringing a solution I have envisioned to life and making a positive impact.
+                I am a web developer with a recent background in email deliverability.  I also happen to be a trained audio engineer, musician, amateur photographer, and licensed Physical Therapist Assistant.  I love analyzing and solving complex problems.
               </p>
               <p class="about-wrapper__info-text">
-                I also love to learn. My desire to expand my knowledge and my background in business will uniquely position me to be able to bridge the gap between the development team and other members of the business.
+                I am always willing and excited to learn new things, which I think suits me very well as a web developer.
               </p>
               <p class="about-wrapper__info-text">
-                I am also passionate about health, natural living, food, and wildlife rehabilitation.
-                <i class="fa fa-paw icon" aria-hidden="true"></i>
+                I live in Colorado with my wife and our dog, Pandora. I love producing/writing music, playing golf, watching baseball, and traveling to Hawaii.  
               </p>
               <span class="d-flex mt-3">
-                <a target="__blank" class="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1dxyfD_2j9GPJ03nUpFKHIVbXGR5oR6iG/view?usp=sharing">
+                <a target="_blank" class="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1Tswy0h0yjPHLzjns-Z3qAOlYArTRSv_t/view?usp=sharing" style="padding-top: 9px">
                   View Resume
-                  <i class="fa fa-file-text icon" aria-hidden="true"></i>
+                  <!-- <i class="fa fa-file-text icon" aria-hidden="true"></i> -->
                   <!-- <i class="fa fa-file icon" aria-hidden="true"></i> -->
-                  <!-- <i class="fa fa-file-text-o" aria-hidden="true"></i> -->
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                </a>
+                <a class="cta-btn cta-btn--resume" href="https://github.com/jonathan-sheets" target="_blank" style="width: 70px; padding: 2px; margin-left: 5px">
+                  <i class="fa fa-github fa-2x"></i>
+                </a>
+                <a class="cta-btn cta-btn--resume" href="https://www.linkedin.com/in/jbsheets/" target="_blank" style="width: 70px; padding: 2px; margin-left: 5px">
+                  <i class="fa fa-linkedin fa-2x"></i>
                 </a>
               </span>
             </div>
@@ -108,16 +121,16 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">myFlix Angular App</h3>
+                <h3 class="project-wrapper__text-title">flixNET Angular App</h3>
                 <div>
                   <p>
-                    This project is an Angular application that allows users to get information about movies, genres, and directors. Users can also save movies in their list of favorites and edit details of their profile. This application uses an existing server-side REST API and MongoDB database.
+                    This project is the client side of my flixNET API built using Angular and Angular Material.  Users can log in or create an account and view a list of all movies in the database. Users can get information about a single movie including a description, the genre, and the director.  Users are also able to add and remove movies from their favorites list and edit details of their profile.
                   </p>
                 </div>
-                <a target="_blank" class="mt-4 cta-btn cta-btn--hero" href="https://bethiamchan.github.io/myFlix-Angular-client/welcome">
+                <a target="_blank" class="mt-4 cta-btn cta-btn--hero" href="https://jonathan-sheets.github.io/flixNET-Angular-client/welcome">
                   View Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/bethiamchan/myFlix-Angular-client">
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jonathan-sheets/flixNET-Angular-client">
                   <i class="fa fa-github" aria-hidden="true"></i>
                   Code
                 </a>
@@ -125,130 +138,9 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="https://github.com/bethiamchan/myFlix-Angular-client" target="_blank">
+                <a href="https://github.com/jonathan-sheets/flixNET-Angular-client" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/myFlixAngularScreenshot.png"/>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">myFlix API</h3>
-                <div>
-                  <p>
-                    This project is a REST API that interacts with a MongoDB database. It is used in other projects to provide movie information and allow users to create accounts and save their favorite movies.
-                  </p>
-                </div>
-                <a target="_blank" class="mt-4 cta-btn cta-btn--hero" href="https://bchanmyflix.herokuapp.com/documentation.html">
-                  View Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/bethiamchan/myFlix">
-                  <i class="fa fa-github" aria-hidden="true"></i>
-                  Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="https://github.com/bethiamchan/myFlix" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/myFlixAPIDocumentationScreenshot.png"/>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Pokédex App</h3>
-                <div>
-                  <p class="mb-4">
-                    This project is a web app using HTML, CSS, and JavaScript. It loads Pokémon data from an external API. Users can view a list of Pokémon and click on a Pokémon's name to view a modal with more details.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="https://bethiamchan.github.io/simple-js-app/">
-                  View Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/bethiamchan/simple-js-app">
-                  <i class="fa fa-github" aria-hidden="true"></i>
-                  Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="https://github.com/bethiamchan/simple-js-app" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/pokedexScreenshot.png"/>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">myFlix React App</h3>
-                <div>
-                  <p>
-                    This project is a React application that allows users to get information about movies, genres, and directors. Users can also save movies in their list of favorites and edit details of their profile. This application uses an existing server-side REST API and MongoDB database.
-                  </p>
-                </div>
-                <a target="_blank" class="mt-4 cta-btn cta-btn--hero" href="https://bethiamchan-myflix.netlify.app/">
-                  View Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/bethiamchan/myFlix-client">
-                  <i class="fa fa-github" aria-hidden="true"></i>
-                  Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="https://github.com/bethiamchan/myFlix-client" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/myFlixReactScreenshot.png"/>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Chat App</h3>
-                <div>
-                  <p>
-                    This is a native app for mobile devices that allows users to chat and share their images and locations. Users can also select their background color before beginning their chat. The application can be accessed offline and will load data from the last online session.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/bethiamchan/chat-app">
-                  <i class="fa fa-github" aria-hidden="true"></i>
-                  Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="https://github.com/bethiamchan/chat-app" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/chatAppScreenshot.png"/>
+                    <img class="img-fluid" src="./assets/flixnetAngular.png" alt="Screenshot of Angular flixNET project"/>
                   </div>
                 </a>
               </div>
@@ -263,10 +155,13 @@
                 <h3 class="project-wrapper__text-title">Meet App</h3>
                 <div>
                   <p>
-                    This project is a React PWA that uses the Google Calendar API. It fetches events so people can view a list of upcoming events and see data visualization charts about these events.
+                    This project is a Progressive Web App built with React that uses the Google Calendar API. Users can filter events by location, change the number of events displayed, view/hide event details, and see event details on Google Calendar.  The app utilizes serverless authentication via AWS Lambda and has offline capability.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/bethiamchan/meet">
+                <a target="_blank" class="mt-4 cta-btn cta-btn--hero" href="https://jonathan-sheets.github.io/meet-app/">
+                  View Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jonathan-sheets/meet-app">
                   <i class="fa fa-github" aria-hidden="true"></i>
                   Code
                 </a>
@@ -274,9 +169,155 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="https://github.com/bethiamchan/meet" target="_blank">
+                <a href="https://github.com/jonathan-sheets/meet-app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/meetScreenshot.png">
+                    <img class="img-fluid" src="./assets/meetApp.png" alt="screenshot of meet app">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Chat App</h3>
+                <div>
+                  <p>
+                    This project is a React Native app for iOS and Android that allows users to chat, share images, and locations. Users can also select a background color before beginning their chat. The app also includes the ability to view messages offline while disabling input so no new messages can be sent.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jonathan-sheets/chat-app">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://github.com/jonathan-sheets/chat-app" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/chatApp.png" alt="screenshot of chat home screen on android and iOS">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Android TV Clock App</h3>
+                <div>
+                  <p>
+                    This is a simple clock app made with React Native for Android TV.  I made it for my wife to use in our home gym because she needed an always on, full-screen clock, that displayed minutes and seconds.  She couldn't find one on the Google Play Store so I madd it in my free time.  It is a simple app that incorporates basic use of the tv remote and an alert/confirmation on exit.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jonathan-sheets/android-tv-clock">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://github.com/jonathan-sheets/android-tv-clock" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/tvclock.gif" alt="Screen recording of tv clock app"/>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">flixNET React App</h3>
+                <div>
+                  <p>
+                    This project is the client side of my flixNET API built with React.  Users can log in or create an account and view a list of all movies in the database. Users can get information about a single movie including a description, the genre, and the director.  Users are also able to add and remove movies from their favorites list and edit details of their profile.
+                  </p>
+                </div>
+                <a target="_blank" class="mt-4 cta-btn cta-btn--hero" href="https://flixnet2020.netlify.app/">
+                  View Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jonathan-sheets/movie_api_client">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://github.com/jonathan-sheets/movie_api_client" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/flixnetReact.png" alt="screenshot of all movies view"/>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">flixNET API</h3>
+                <div>
+                  <p>
+                    This project is a REST API that interacts with a MongoDB database. It is used in other client-side projects to provide movie information, and allow users to create accounts and save their favorite movies.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jonathan-sheets/movie_api">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://github.com/jonathan-sheets/movie_api" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/flixnetAPI.png" alt="screenshot of API documentation file"/>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Pokédex App</h3>
+                <div>
+                  <p class="mb-4">
+                    This project is a web app written primarily in JavaScript with some JQuery. It loads Pokémon data from an external API. Users can view a list of Pokémon and click on a Pokémon's button to view a modal with more details/statistics.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://jonathan-sheets.github.io/pokedex-js-app/">
+                  View Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/jonathan-sheets/pokedex-js-app">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://github.com/jonathan-sheets/pokedex-js-app" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/pokedex.png" alt="screenshot of app with pokemon modal displayed"/>
                   </div>
                 </a>
               </div>
@@ -297,12 +338,12 @@
         </h2>
         <div class="contact-wrapper">
           <p class="contact-wrapper__text">
-            Thank you for taking the time to learn more about me and for checking out my projects. Contact me to get in touch about potential opportunities or to connect.
+            Thank you for taking the time to learn about me and for checking out my projects. Contact me to get in touch about potential opportunities or click the icons below to connect on LinkedIn or GitHub.
           </p>
           <a
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:bethiamchan@gmail.com"
+            href="mailto:jbsheets575@gmail.com"
             >
               Send An Email
               <i class="fa fa-envelope icon" aria-hidden="true"></i>
@@ -316,21 +357,35 @@
     <footer class="footer navbar-static-bottom">
       <div class="container">
         <a href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+          <!-- <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i> -->
+          <!-- <br /> -->
+          <i class="fa fa-angle-up fa-2x" style="color: #bb3434"><br/>
+            <img 
+              src="assets/logo-192x192.png" 
+              class="img-fluid" 
+              style="width: 110px; margin-top: -10px" 
+              alt="Jonathan Sheets logo"
+            >
+          </i>
         </a>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/bethia-chan/" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
+          <a href="https://www.linkedin.com/in/jbsheets/" target="_blank">
+            <div class="fa-stack">
+              <i class="fa fa-square-o fa-stack-2x" style="color: #bb3434; margin-top: -15px; margin-left: -20px"></i>
+              <i class="fa fa-linkedin fa-stack-1x" style="color: #bb3434; margin-top: -15px; margin-left: -20px"></i>
+            </div>
           </a>
-          <a href="https://github.com/bethiamchan" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
+          <a href="https://github.com/jonathan-sheets" target="_blank">
+            <div class="fa-stack fa-md">
+              <i class="fa fa-square-o fa-stack-2x" style="color: #bb3434; margin-top: -15px; margin-left: 20px"></i>
+              <i class="fa fa-github fa-stack-1x" style="color: #bb3434; margin-top: -15px; margin-left: 20px"></i>
+            </div>
           </a>
         </div>
 
         <hr />
         <p class="footer__text">
-          © 2020 - Template developed by <a href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
-          </a>
+          © 2021 - Template developed by <a href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
         </p>
 
       </div>
