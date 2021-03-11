@@ -1,6 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/31328ca2-5454-47fa-9852-696b98e0baa0/deploy-status)](https://app.netlify.com/sites/jonathansheets/deploys)
 # My Portfolio
 
-## [Live site here!](https://bethiachan.netlify.app/)
+## [Live site here!](https://jonathansheets.netlify.app/)
 
 ---
 
