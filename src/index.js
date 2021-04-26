@@ -1,6 +1,6 @@
 import initTilt from './js/tilt';
 import initSr from './js/sr';
-import js_resume from './assets/js_resume.pdf';
+import Jonathan_Sheets_Resume from './assets/Jonathan_Sheets_Resume.pdf';
 
 import './style/main.scss';
 
@@ -30,4 +30,4 @@ initSr();
 initTilt();
 
 // uncomment this if you want to attach your resume
-addResume(js_resume);
+addResume(Jonathan_Sheets_Resume);
